@@ -5,6 +5,7 @@ This project is designed to build a Docker image for running Selenium tests.
 ## Prerequisites
 
 - Docker installed on your machine
+- update application url in this file: src/main/resources/config.properties
 
 ## Steps to Build and Run Tests
 
