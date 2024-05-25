@@ -6,6 +6,7 @@ This project is designed to build a Docker image for running Selenium tests.
 
 - Docker installed on your machine
 - update application url in this file: src/main/resources/config.properties
+- update Grid url in this file: src/main/java/com/framework/selenium/api/base/DriverInstance.java
 
 ## Steps to Build and Run Tests
 
