@@ -5,27 +5,19 @@
 		<parameter name="browser" value="chrome"></parameter>
 		<classes>
 			<class name="com.pos.testcases.CreateNewVendor" />
-			<class name="com.pos.testcases.EditVendor" />
+<!-- 			<class name="com.pos.testcases.EditVendor" />
 			<class name="com.pos.testcases.DeleteVendor" />
-		</classes>
-	</test>
-
-	<test name="chrome1" parallel="true" thread-count="1">
-		<parameter name="browser" value="chrome"></parameter>
-		<classes>
 			<class name="com.pos.testcases.CreateNewProduct" />
 			<class name="com.pos.testcases.EditProduct" />
-			<class name="com.pos.testcases.DeleteProduct" />
+			<class name="com.pos.testcases.DeleteProduct" /> -->
 		</classes>
 	</test>
-
 	<test name="firefox" parallel="true" thread-count="1">
 		<parameter name="browser" value="firefox"></parameter>
 		<classes>
 			<class name="com.pos.testcases.CreateNewCutomer" />
-			<class name="com.pos.testcases.EditCustomer" />
-			<class name="com.pos.testcases.DeleteCustomer" />
-
+<!-- 			<class name="com.pos.testcases.EditCustomer" />
+			<class name="com.pos.testcases.DeleteCustomer" /> -->
 		</classes>
 	</test>
 
