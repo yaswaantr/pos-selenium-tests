@@ -10,7 +10,7 @@
 		</classes>
 	</test>
 
-	<test name="chrome" parallel="true" thread-count="1">
+	<test name="chrome1" parallel="true" thread-count="1">
 		<parameter name="browser" value="chrome"></parameter>
 		<classes>
 			<class name="com.pos.testcases.CreateNewProduct" />
