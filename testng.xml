@@ -23,7 +23,7 @@
 	<test name="MicrosoftEdge" parallel="true" thread-count="1">
 		<parameter name="browser" value="edge"></parameter>
 		<classes>
-			<class name="com.pos.testcases.CreateNewCutomer" />
+			<class name="com.pos.testcases.CreateNewCustomer" />
 			<class name="com.pos.testcases.EditCustomer" />
 			<class name="com.pos.testcases.DeleteCustomer" />
 

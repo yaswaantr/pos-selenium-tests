@@ -3,4 +3,8 @@
 .classpath
 .settings/
 /reports/
+<<<<<<< HEAD
 /test-output/
+=======
+/test-output/
+>>>>>>> 717a814c43d64193d44543768e6498a60cf3e6a5
