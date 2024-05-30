@@ -26,6 +26,9 @@ public class ProjectSpecificMethods extends SeleniumBase {
 		} else if(browserName.equalsIgnoreCase("firefox")) {
 			startApp("firefox", false, prop.getProperty("url"));
 			setNode();
+		}else if(browserName.equalsIgnoreCase("edge")) {
+			startApp("edge", false, prop.getProperty("url"));
+			setNode();
 		}
 	}
 

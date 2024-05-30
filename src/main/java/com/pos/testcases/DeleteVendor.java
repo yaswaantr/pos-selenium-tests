@@ -22,6 +22,7 @@ public class DeleteVendor extends ProjectSpecificMethods{
 			String vendorId,String deletePopup,
 			String verifyDeletePopup)
 			 {
+		System.out.println("Running Testcase : " + "DeleteVendor");
 		new LoginPage()
 		.login()
 		.clickVendorsMenu()

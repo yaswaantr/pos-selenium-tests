@@ -21,6 +21,7 @@ public class CreateNewVendor extends ProjectSpecificMethods{
 	public void runLogin(
 			String vendorId,String vendorName,String vendorDescription
 			,String  vendorAddress,String  vendorMobile,String  vendorEmailId) {
+		System.out.println("Running Testcase : " + "Create New vendors");
 		new LoginPage()
 		.login()
 		.clickVendorsMenu()

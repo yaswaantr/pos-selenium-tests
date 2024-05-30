@@ -21,6 +21,7 @@ public class CreateNewProduct extends ProjectSpecificMethods{
 	public void runLogin(String productId,String productName,String productDescription
 			,String costPrice,String sellingPrice
 			) {
+		System.out.println("Running Testcase : " + "Create New Product");
 		new LoginPage()
 		.login()
 		.clickProductMenu()

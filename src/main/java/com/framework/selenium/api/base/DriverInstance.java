@@ -8,6 +8,7 @@ import org.openqa.selenium.Platform;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.edge.EdgeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.ie.InternetExplorerDriver;
@@ -40,7 +41,7 @@ public class DriverInstance{
 			dc.setPlatform(Platform.LINUX);
 			options.merge(dc);
 
-			remoteWebdriver.set(new RemoteWebDriver(new URL("http://4.240.107.136:4449/wd/hub"), options));
+			remoteWebdriver.set(new RemoteWebDriver(new URL("http://98.70.73.82:32000/wd/hub"), options));
 			break;
 		case "firefox":
 			FirefoxOptions firefoxOptions = new FirefoxOptions();
@@ -48,15 +49,21 @@ public class DriverInstance{
 			desiredCap.setBrowserName("firefox");
 			desiredCap.setPlatform(Platform.LINUX);
 			firefoxOptions.merge(desiredCap);
-			remoteWebdriver.set(new RemoteWebDriver(new URL("http://4.240.107.136:4449/wd/hub"), firefoxOptions));
+			remoteWebdriver.set(new RemoteWebDriver(new URL("http://98.70.73.82:32000/wd/hub"), firefoxOptions));
 			break;
 		case "edge":
-			remoteWebdriver.set(new EdgeDriver());
+			EdgeOptions edgeOptions = new EdgeOptions();
+			DesiredCapabilities desiredCapEdge = new DesiredCapabilities();
+			desiredCapEdge.setBrowserName("MicrosoftEdge");
+			desiredCapEdge.setPlatform(Platform.LINUX);
+			edgeOptions.merge(desiredCapEdge);
+			remoteWebdriver.set(new RemoteWebDriver(new URL("http://98.70.73.82:32000/wd/hub"), edgeOptions));
 			break;	
 		case "ie":
 			remoteWebdriver.set(new InternetExplorerDriver());
 		default:
 			break;
+		
 		}
 	}
 	public RemoteWebDriver getDriver() {

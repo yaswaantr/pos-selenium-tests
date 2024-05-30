@@ -6,11 +6,11 @@ import org.testng.annotations.Test;
 import com.framework.testng.api.base.ProjectSpecificMethods;
 import com.pos.pages.LoginPage;
 
-public class CreateNewCutomer extends ProjectSpecificMethods{
+public class CreateNewCustomer extends ProjectSpecificMethods{
 	
 	@BeforeTest
 	public void setValues() {
-		testcaseName = "CreateNewCutomer";
+		testcaseName = "CreateNewCustomer";
 		testDescription ="Verify The New customer has created";
 		authors="Hari";
 		category ="Smoke";
@@ -20,6 +20,7 @@ public class CreateNewCutomer extends ProjectSpecificMethods{
 	@Test(dataProvider = "fetchData")
 	public void runLogin(String customerId,String customerName,String customerDescription
 			,String customeAddress,String customeMobile,String emailId) {
+		System.out.println("Running Testcase : " + "Create New Customer");
 		new LoginPage()
 		.login()
 		.clickCustomersMenu()

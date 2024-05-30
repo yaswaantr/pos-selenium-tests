@@ -10,7 +10,7 @@ public class EditCustomer extends ProjectSpecificMethods{
 	
 	@BeforeTest
 	public void setValues() {
-		testcaseName = "EditCutomer";
+		testcaseName = "EditCustomer";
 		testDescription ="Verify The New customer name has updated";
 		authors="Hari";
 		category ="Smoke";
@@ -20,6 +20,7 @@ public class EditCustomer extends ProjectSpecificMethods{
 	@Test(dataProvider = "fetchData")
 	public void runLogin(String customerId,String customerName,String verifyEditPopup
 			,String customerNameChanged) {
+		System.out.println("Running Testcase : " + "EditCustomer");
 		new LoginPage()
 		.login()
 		.clickCustomersMenu()

@@ -20,6 +20,7 @@ public class DeleteProduct extends ProjectSpecificMethods{
 	@Test(dataProvider = "fetchData")
 	public void runLogin(String productId,String deletePopup,String verifyDeletePopup)
 			 {
+		System.out.println("Running Testcase : " + "DeleteProduct");
 		new LoginPage()
 		.login()
 		.clickProductMenu()

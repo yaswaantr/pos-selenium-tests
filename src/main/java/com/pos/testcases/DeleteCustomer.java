@@ -10,7 +10,7 @@ public class DeleteCustomer extends ProjectSpecificMethods{
 	
 	@BeforeTest
 	public void setValues() {
-		testcaseName = "DeleteCutomer";
+		testcaseName = "DeleteCustomer";
 		testDescription ="Customer deleted successfully";
 		authors="Hari";
 		category ="Smoke";
@@ -20,6 +20,7 @@ public class DeleteCustomer extends ProjectSpecificMethods{
 	@Test(dataProvider = "fetchData")
 	public void runLogin(String customerId,String verifyDeletePopup,String deletePopup)
 			 {
+		System.out.println("Running Testcase : " + "DeleteCustomer");
 		new LoginPage()
 		.login()
 		.clickCustomersMenu()
