@@ -41,7 +41,7 @@ public class DriverInstance{
 			dc.setPlatform(Platform.LINUX);
 			options.merge(dc);
 
-			remoteWebdriver.set(new RemoteWebDriver(new URL("http://4.240.107.136:4449/wd/hub"), options));
+			remoteWebdriver.set(new RemoteWebDriver(new URL("http://98.70.73.82:32000/wd/hub"), options));
 			break;
 		case "firefox":
 			FirefoxOptions firefoxOptions = new FirefoxOptions();
@@ -49,7 +49,7 @@ public class DriverInstance{
 			desiredCap.setBrowserName("firefox");
 			desiredCap.setPlatform(Platform.LINUX);
 			firefoxOptions.merge(desiredCap);
-			remoteWebdriver.set(new RemoteWebDriver(new URL("http://20.40.49.128:32000/wd/hub"), firefoxOptions));
+			remoteWebdriver.set(new RemoteWebDriver(new URL("http://98.70.73.82:32000/wd/hub"), firefoxOptions));
 			break;
 		case "edge":
 			EdgeOptions edgeOptions = new EdgeOptions();
@@ -57,7 +57,7 @@ public class DriverInstance{
 			desiredCapEdge.setBrowserName("MicrosoftEdge");
 			desiredCapEdge.setPlatform(Platform.LINUX);
 			edgeOptions.merge(desiredCapEdge);
-			remoteWebdriver.set(new RemoteWebDriver(new URL("http://20.40.49.128:32000/wd/hub"), edgeOptions));
+			remoteWebdriver.set(new RemoteWebDriver(new URL("http://98.70.73.82:32000/wd/hub"), edgeOptions));
 			break;	
 		case "ie":
 			remoteWebdriver.set(new InternetExplorerDriver());
