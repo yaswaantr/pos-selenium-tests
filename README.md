@@ -23,5 +23,5 @@ docker build -t pos-selenium-test:latest -f posdockerfile .
 To run the Selenium tests using the Docker image, use the following command:
 
 ```sh
-docker run pos-selenium-test:latest
+docker run -d pos-selenium-test:latest
 ```
