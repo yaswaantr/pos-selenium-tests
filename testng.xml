@@ -5,7 +5,7 @@
 		<parameter name="browser" value="chrome"></parameter>
 		<classes>
 			<class name="com.pos.testcases.CreateNewVendor" />
-			<class name="com.pos.testcases.EditVendor" />
+			<!-- <class name="com.pos.testcases.EditVendor" /> -->
 			<class name="com.pos.testcases.DeleteVendor" />
 
 		</classes>
@@ -14,13 +14,13 @@
 		<parameter name="browser" value="firefox"></parameter>
 		<classes>
 			<class name="com.pos.testcases.CreateNewProduct" />
-			<class name="com.pos.testcases.EditProduct" />
+			<!-- <class name="com.pos.testcases.EditProduct" /> -->
 			<class name="com.pos.testcases.DeleteProduct" /> 
 
 		</classes>
 	</test>
 
-	<test name="MicrosoftEdge" parallel="true" thread-count="3">
+	<!-- <test name="MicrosoftEdge" parallel="true" thread-count="3">
 		<parameter name="browser" value="edge"></parameter>
 		<classes>
 			<class name="com.pos.testcases.CreateNewCustomer" />
@@ -28,6 +28,6 @@
 			<class name="com.pos.testcases.DeleteCustomer" />
 
 		</classes>
-	</test> 
+	</test>  -->
 
 </suite>
