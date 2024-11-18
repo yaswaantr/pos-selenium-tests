@@ -14,7 +14,7 @@
 		<parameter name="browser" value="firefox"></parameter>
 		<classes>
 			<class name="com.pos.testcases.CreateNewProduct" />
-			<!-- <class name="com.pos.testcases.EditProduct" /> 
+			<class name="com.pos.testcases.EditProduct" /> 
 			<class name="com.pos.testcases.DeleteProduct" /> 
 
 		</classes>
